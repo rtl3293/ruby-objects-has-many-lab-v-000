@@ -2,8 +2,8 @@ require_relative 'author.rb'
 
 
 class Post
-
-  def initialize
+  attr_accessor :title
+  def initialize(title)
 
   end
 
