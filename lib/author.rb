@@ -2,6 +2,7 @@ require_relative 'post.rb'
 
 class Author
   attr_accessor :name, :posts
+  @@post_count = []
 
   def initialize(name)
     @posts = []
@@ -17,4 +18,9 @@ class Author
     post = Post.new(title)
     add_post(post)
   end
+
+  def self.post_count
+
+  end
+
 end
