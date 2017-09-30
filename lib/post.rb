@@ -7,5 +7,12 @@ class Post
     @title = title
   end
 
+  def author_name
+    if @author.is_a?(Author) == true
+      @author.name
+      
+  end
+
+  
 
 end
