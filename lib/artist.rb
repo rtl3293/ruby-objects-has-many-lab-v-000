@@ -1,7 +1,6 @@
 require_relative 'song.rb'
 
 class Artist
-  @@total_songs = []
   @@song_count = 0
   attr_accessor :name
 
@@ -16,7 +15,6 @@ class Artist
 
   def add_song(song)
     @songs << song
-    @@total_songs << song
     @@song_count += 1
     song.artist = self
   end
