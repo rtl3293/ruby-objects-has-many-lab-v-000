@@ -10,9 +10,12 @@ class Post
   def author_name
     if @author.is_a?(Author) == true
       @author.name
-      
+    else
+      nil
+    end
+    
   end
 
-  
+
 
 end
